@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Brain Digits</h1>
+      <p class="instructions">
+        Guess the secret number between <span id="min-num">1</span> and
+        <span id="max-num">100</span>!
+      </p>
+
+      <input
+        type="number"
+        id="guess-input"
+        placeholder="Enter your guess"
+        min="1"
+        max="100"
+      />
+      <button id="guess-btn">Guess</button>
+
+      <div id="message" class="message"></div>
+      <div class="score-board">
+        <p>Attempts: <span id="attempts">0</span></p>
+        <p>High Score: <span id="highscore">0</span></p>
+      </div>
+
+      <button id="reset-btn" class="hidden">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
